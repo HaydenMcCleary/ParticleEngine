@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hayden/Documents/OpenGL_intro
+CMAKE_SOURCE_DIR = /home/hayden/Documents/ParticleEngine/OpenGL_intro
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hayden/Documents/OpenGL_intro/build
+CMAKE_BINARY_DIR = /home/hayden/Documents/ParticleEngine/OpenGL_intro/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/opengl_project.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/opengl_project.dir/progress.make
 include CMakeFiles/opengl_project.dir/flags.make
 
 CMakeFiles/opengl_project.dir/src/main.cpp.o: CMakeFiles/opengl_project.dir/flags.make
-CMakeFiles/opengl_project.dir/src/main.cpp.o: /home/hayden/Documents/OpenGL_intro/src/main.cpp
+CMakeFiles/opengl_project.dir/src/main.cpp.o: /home/hayden/Documents/ParticleEngine/OpenGL_intro/src/main.cpp
 CMakeFiles/opengl_project.dir/src/main.cpp.o: CMakeFiles/opengl_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hayden/Documents/OpenGL_intro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opengl_project.dir/src/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_project.dir/src/main.cpp.o -MF CMakeFiles/opengl_project.dir/src/main.cpp.o.d -o CMakeFiles/opengl_project.dir/src/main.cpp.o -c /home/hayden/Documents/OpenGL_intro/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hayden/Documents/ParticleEngine/OpenGL_intro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opengl_project.dir/src/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_project.dir/src/main.cpp.o -MF CMakeFiles/opengl_project.dir/src/main.cpp.o.d -o CMakeFiles/opengl_project.dir/src/main.cpp.o -c /home/hayden/Documents/ParticleEngine/OpenGL_intro/src/main.cpp
 
 CMakeFiles/opengl_project.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opengl_project.dir/src/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hayden/Documents/OpenGL_intro/src/main.cpp > CMakeFiles/opengl_project.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hayden/Documents/ParticleEngine/OpenGL_intro/src/main.cpp > CMakeFiles/opengl_project.dir/src/main.cpp.i
 
 CMakeFiles/opengl_project.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opengl_project.dir/src/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hayden/Documents/OpenGL_intro/src/main.cpp -o CMakeFiles/opengl_project.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hayden/Documents/ParticleEngine/OpenGL_intro/src/main.cpp -o CMakeFiles/opengl_project.dir/src/main.cpp.s
 
 CMakeFiles/opengl_project.dir/src/glad.c.o: CMakeFiles/opengl_project.dir/flags.make
-CMakeFiles/opengl_project.dir/src/glad.c.o: /home/hayden/Documents/OpenGL_intro/src/glad.c
+CMakeFiles/opengl_project.dir/src/glad.c.o: /home/hayden/Documents/ParticleEngine/OpenGL_intro/src/glad.c
 CMakeFiles/opengl_project.dir/src/glad.c.o: CMakeFiles/opengl_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hayden/Documents/OpenGL_intro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/opengl_project.dir/src/glad.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opengl_project.dir/src/glad.c.o -MF CMakeFiles/opengl_project.dir/src/glad.c.o.d -o CMakeFiles/opengl_project.dir/src/glad.c.o -c /home/hayden/Documents/OpenGL_intro/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hayden/Documents/ParticleEngine/OpenGL_intro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/opengl_project.dir/src/glad.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opengl_project.dir/src/glad.c.o -MF CMakeFiles/opengl_project.dir/src/glad.c.o.d -o CMakeFiles/opengl_project.dir/src/glad.c.o -c /home/hayden/Documents/ParticleEngine/OpenGL_intro/src/glad.c
 
 CMakeFiles/opengl_project.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/opengl_project.dir/src/glad.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hayden/Documents/OpenGL_intro/src/glad.c > CMakeFiles/opengl_project.dir/src/glad.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hayden/Documents/ParticleEngine/OpenGL_intro/src/glad.c > CMakeFiles/opengl_project.dir/src/glad.c.i
 
 CMakeFiles/opengl_project.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/opengl_project.dir/src/glad.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hayden/Documents/OpenGL_intro/src/glad.c -o CMakeFiles/opengl_project.dir/src/glad.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hayden/Documents/ParticleEngine/OpenGL_intro/src/glad.c -o CMakeFiles/opengl_project.dir/src/glad.c.s
 
 # Object files for target opengl_project
 opengl_project_OBJECTS = \
@@ -111,7 +111,7 @@ opengl_project: CMakeFiles/opengl_project.dir/build.make
 opengl_project: /usr/lib/x86_64-linux-gnu/libGLX.so
 opengl_project: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 opengl_project: CMakeFiles/opengl_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hayden/Documents/OpenGL_intro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable opengl_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hayden/Documents/ParticleEngine/OpenGL_intro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable opengl_project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opengl_project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/opengl_project.dir/clean:
 .PHONY : CMakeFiles/opengl_project.dir/clean
 
 CMakeFiles/opengl_project.dir/depend:
-	cd /home/hayden/Documents/OpenGL_intro/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hayden/Documents/OpenGL_intro /home/hayden/Documents/OpenGL_intro /home/hayden/Documents/OpenGL_intro/build /home/hayden/Documents/OpenGL_intro/build /home/hayden/Documents/OpenGL_intro/build/CMakeFiles/opengl_project.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/hayden/Documents/ParticleEngine/OpenGL_intro/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hayden/Documents/ParticleEngine/OpenGL_intro /home/hayden/Documents/ParticleEngine/OpenGL_intro /home/hayden/Documents/ParticleEngine/OpenGL_intro/build /home/hayden/Documents/ParticleEngine/OpenGL_intro/build /home/hayden/Documents/ParticleEngine/OpenGL_intro/build/CMakeFiles/opengl_project.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/opengl_project.dir/depend
 

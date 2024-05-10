@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/hayden/Documents/OpenGL_intro/build",
-		"source" : "/home/hayden/Documents/OpenGL_intro"
+		"build" : "/home/hayden/Documents/ParticleEngine/OpenGL_intro/build",
+		"source" : "/home/hayden/Documents/ParticleEngine/OpenGL_intro"
 	},
 	"version" : 
 	{

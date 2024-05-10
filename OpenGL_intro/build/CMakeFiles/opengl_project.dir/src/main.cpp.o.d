@@ -1,8 +1,8 @@
 CMakeFiles/opengl_project.dir/src/main.cpp.o: \
- /home/hayden/Documents/OpenGL_intro/src/main.cpp \
+ /home/hayden/Documents/ParticleEngine/OpenGL_intro/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/hayden/Documents/OpenGL_intro/src/glad.h \
- /home/hayden/Documents/OpenGL_intro/src/khrplatform.h \
+ /home/hayden/Documents/ParticleEngine/OpenGL_intro/src/glad.h \
+ /home/hayden/Documents/ParticleEngine/OpenGL_intro/src/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \

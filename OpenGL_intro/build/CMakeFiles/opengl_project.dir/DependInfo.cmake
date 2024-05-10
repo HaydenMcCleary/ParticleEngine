@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/hayden/Documents/OpenGL_intro/src/glad.c" "CMakeFiles/opengl_project.dir/src/glad.c.o" "gcc" "CMakeFiles/opengl_project.dir/src/glad.c.o.d"
-  "/home/hayden/Documents/OpenGL_intro/src/main.cpp" "CMakeFiles/opengl_project.dir/src/main.cpp.o" "gcc" "CMakeFiles/opengl_project.dir/src/main.cpp.o.d"
+  "/home/hayden/Documents/ParticleEngine/OpenGL_intro/src/glad.c" "CMakeFiles/opengl_project.dir/src/glad.c.o" "gcc" "CMakeFiles/opengl_project.dir/src/glad.c.o.d"
+  "/home/hayden/Documents/ParticleEngine/OpenGL_intro/src/main.cpp" "CMakeFiles/opengl_project.dir/src/main.cpp.o" "gcc" "CMakeFiles/opengl_project.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -14,4 +14,4 @@ target_link_libraries(opengl_project
     PRIVATE OpenGL::GL
     PRIVATE dl
 )
-            
+        

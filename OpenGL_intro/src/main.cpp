@@ -9,15 +9,22 @@
 #include <iostream>
 
 #include <cmath>
+#include <sstream>
+#include <vector>
+
+#define STB_IMAGE_WRITE_IMPLEMENTATION
+#include "stb_image_write.h" // For saving images
 
 
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
+void captureSnapshot(const char* filename, int width, int height);
 
 // settings
-const unsigned int SCR_WIDTH = 2400;
-const unsigned int SCR_HEIGHT = 1200;
+const unsigned int SCR_WIDTH = 800;
+const unsigned int SCR_HEIGHT = 600;
+
 
 int main()
 {
@@ -132,7 +139,7 @@ int main()
     // glBindVertexArray(0);
 
 
-
+    int i;
     // render loop
     // -----------
     while (!glfwWindowShouldClose(window))
@@ -156,10 +163,17 @@ int main()
         // render the triangle
         ourShader.use();
         glBindVertexArray(VAO);
-        glDrawElements(GL_TRIANGLES, 24, GL_UNSIGNED_INT, (void*)(3*sizeof(unsigned int))); // Draw the rectangles
+        glDrawElements(GL_TRIANGLES, 18, GL_UNSIGNED_INT, (void*)(3*sizeof(unsigned int))); // Draw the rectangles
         glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0); // Draw the rectangles
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (void*)(21*sizeof(unsigned int))); // Draw the rectangles
         glBindVertexArray(0);
 
+
+
+        std::ostringstream filename;
+
+        filename << "screenshot_" << ++i << ".png";
+        captureSnapshot(filename.str().c_str(), SCR_WIDTH, SCR_HEIGHT);
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
@@ -201,3 +215,28 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 
 }
 
+void captureSnapshot(const char* filename, int width, int height)
+{
+
+    
+    std::string filepath = "/home/hayden/Documents/ParticleEngine/OpenGL_intro/screenshots_to_gif/screenshots" + std::string(filename);
+
+    // Allocate memory for the image
+    std::vector<unsigned char> pixels(3 * width * height);
+
+    // Read the pixels from the framebuffer
+    glReadPixels(0, 0, width, height, GL_RGB, GL_UNSIGNED_BYTE, pixels.data());
+
+    // Flip the image vertically
+    for (int i = 0; i < height / 2; ++i)
+    {
+        for (int j = 0; j < width * 3; ++j)
+        {
+            std::swap(pixels[i * width * 3 + j], pixels[(height - i - 1) * width * 3 + j]);
+        }
+    }
+
+    // Save the image using stb_image_write
+    stbi_flip_vertically_on_write(1);
+    stbi_write_png(filepath.c_str(), width, height, 3, pixels.data(), width * 3);
+}

@@ -147,8 +147,10 @@ int main()
 
         float timeValue = glfwGetTime();
         float movement = (sin(timeValue)/2.0f);
+        float colorChange = (sin(timeValue)/2.0f);
 
         ourShader.setFloat("xOffset", movement);
+        ourShader.setFloat("colorOffset", colorChange);
 
 
         // input

@@ -16,7 +16,7 @@ void main()
     }
     else 
     {
-        FragColor = vec4(ourColor.x + colorOffset, ourColor.y - colorOffset, ourColor.z, 1.0f);
+        FragColor = vec4(ourColor.x + colorOffset, ourColor.y - colorOffset, ourColor.z - colorOffset, 1.0f);
     }
 
 }
